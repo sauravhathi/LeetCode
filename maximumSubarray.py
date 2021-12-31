@@ -5,10 +5,8 @@ class Solution:
         
         for i in range(len(nums)):
             curSum += nums[i]
-            if (curSum > maxSum):
+            if (curSum > maxSum or curSum < 0 ):
                 maxSum = curSum
-            if (curSum < 0 ):
-                curSum = 0
         return maxSum
 #SauravHathi
 # https://leetcode.com/problems/maximum-subarray/
